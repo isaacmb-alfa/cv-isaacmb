@@ -1,0 +1,139 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav img {
+    width: 200px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .9rem;
+    color: white;
+}
+
+.container-head {
+    max-height: 550px;
+    min-height: 440px;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+
+.container-head::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container-img-hero {
+    background-image: url(./img/mountain.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: inherit, scroll;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.container-head .container {
+    position: relative;
+    text-align: center;
+    height: 100%;
+    color: white;
+}
+
+.container {
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.container-center {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 15px;
+    color: #fff;
+    width: 100%;
+    max-width: 880px;
+}
+
+.image a {
+    position: relative;
+    color: blue
+}
+
+.image a::before {
+    content: "";
+    border: 15px solid rgba(55, 62, 140, 0.6);
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    left: 0;
+    animation: pulsate 1.6s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 1;
+    z-index: 99;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(.6, .6);
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity: 0
+    }
+}
+
+.image img {
+    position: relative;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    padding: 0;
+    margin: 0;
+    border: 15px solid transparent;
+    transition: all .3s ease-out;
+    z-index: 9999;
+}
