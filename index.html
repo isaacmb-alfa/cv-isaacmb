@@ -4,37 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalizamos el css con normalizer -->
+    <link rel="stylesheet" href="css/normalizer.css">
     <link rel="stylesheet" href="style.css">
+    <!-- Fuentes del documento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Mi CV</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <img src="./img/logo-portfolio.svg" alt="logo isaac manriquez" class="logo" style="width:200px;">
-            <ul class="nav-head">
-                <li><a href="">sobre mi</a></li>
-                <li><a href="">skills</a></li>
-                <li><a href="">portafolio</a></li>
-                <li><a href="">experiencia</a></li>
-                <li><a href="">educación</a></li>
-                <li><a href="">contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container-head">
+            <div class="container-img-hero"></div>
+            <div class="wrapper">
+                <nav>
+                    <img src="./img/logo-portfolio.svg" alt="logo isaac manriquez" class="logo">
+                    <ul class="nav-head">
+                        <li><a href="#about">sobre mi</a></li>
+                        <li><a href="#skills">skills</a></li>
+                        <li><a href="#portfolio">portafolio</a></li>
+                        <li><a href="#experience">experiencia</a></li>
+                        <li><a href="#education">educación</a></li>
+                        <li><a href="#contact">contacto</a></li>
+                    </ul>
+                </nav>
+                <section class="container">
+                    <div class="container-center">
+                        <article class="imagen-hero">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="./img/profile-img-isaac.jpg" alt="" class="imagen-profile">
+                                </a>
+                            </div>
+                            <h1 class="name">Isaac Manríquez</h1>
+                            <p class="profile">Developer Web, Diseñador Gráfico</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
     </header>
-    <main>
-        <section class="container">
-            <article class="imagen-hero">
-                <img src="" alt="" class="imagen-profile">
-                <h1 class="name">Isaac Manríquez</h1>
-                <p class="profile">Developer Web, Diseñador Gráfico</p>
-            </article>
+
+    <main class="container">
+        <section class="main">
             <article id="about" class="about">
                 <div class="description">
                     <h2>Sobre mi</h2>
-                    <p class="profile-description">Hola, Soy Isaac Manríquez, Diseñador Gráfico y Progrmador Web.</p>
-                    <p class="profile-description">Esté creativo diseño de cv esta realizado en Html, Css y JavaScript
+                    <p class="profile-description">Hola, Soy Isaac Manríquez, Diseñador Gráfico y Programador Web.
+                    </p>
+                    <p class="profile-description">Esté creativo diseño de cv esta realizado en Html, Css y
+                        JavaScript
                     </p>
                 </div>
                 <div class="info-contact">
@@ -92,7 +116,7 @@
                 <div class="card"></div>
                 <div class="card"></div>
             </article>
-            <article id="educaction" class="education">
+            <article id="education" class="education">
                 <h2>Educación</h2>
                 <div class="card"></div>
                 <div class="card"></div>
@@ -105,7 +129,7 @@
                         <form action=""></form>
                     </div>
                     <div class="datos-contacto">
-                    
+
                     </div>
                 </div>
             </article>
@@ -118,6 +142,7 @@
             <p class="legal"></p>
         </nav>
     </footer>
+
 </body>
 
 </html>

@@ -2,9 +2,12 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-.container {
+.wrapper {
     width: 1250px;
     margin: 0 auto;
+    height: 100%;
+    position: relative;
+    text-align: center;
 }
 
 nav {
@@ -73,12 +76,6 @@ nav ul li a {
     color: white;
 }
 
-.container {
-    height: 100%;
-    position: relative;
-    text-align: center;
-}
-
 .container-center {
     position: absolute;
     top: 30%;
@@ -136,4 +133,9 @@ nav ul li a {
     border: 15px solid transparent;
     transition: all .3s ease-out;
     z-index: 9999;
+}
+
+.container {
+    width: 1250px;
+    margin: 0 auto;
 }
